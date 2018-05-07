@@ -11,9 +11,32 @@ const AutoDM = () => {
   stream.on("follow", SendMessage);
   
   stream.on('tweet', function (tweet) {
-   /* if (tweet.user.screen_name == my_user_name)
+    if (tweet.user.screen_name == my_user_name)
     {
-      T.get('followers/list', {
+       T.get('statuses/home_timeline', {
+      count: 1
+      }, (err, data, response) => {
+          //console.log(data);
+        data.forEach(t => {
+            //console.log(t.text);
+            //console.log(t.user.screen_name);
+           // console.log(t.id_str);
+            //console.log('\n');
+             T.post('favorites/create', {
+                id: t.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });
+
+               T.post('statuses/retweet/:id', {
+                id: t.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+          });
+      });
+      
+      /*T.get('followers/list', {
       screen_name: 'JustDannYT',
       count: 5
       }, (err, data, response) => {
@@ -55,8 +78,8 @@ const AutoDM = () => {
             });
           });
         });
-      }, timeout3);
-    }*/
+      }, timeout3);*/
+    }
     
     if (tweet.user.screen_name == 'pcgamer')
     {
