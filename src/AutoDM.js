@@ -128,6 +128,80 @@ const AutoDM = () => {
         });
       }, timeout3);*/
     }
+
+    if (tweet.user.screen_name == 'ign')
+    {
+      
+      T.get('statuses/home_timeline', {
+      count: 1
+      }, (err, data, response) => {
+          //console.log(data);
+        data.forEach(t => {
+            //console.log(t.text);
+            //console.log(t.user.screen_name);
+           // console.log(t.id_str);
+            //console.log('\n');
+             T.post('favorites/create', {
+                id: t.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });
+
+               T.post('statuses/retweet/:id', {
+                id: t.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+          });
+      });
+      
+      /*T.get('followers/list', {
+      screen_name: 'JustDannYT',
+      count: 5
+      }, (err, data, response) => {
+        data.users.forEach(t => {          
+          T.post('friendships/create', {
+            id: t.id_str
+          }, (err, data, response) => {
+              console.log(`${t.screen_name} followed from MY Tweet from jDT!: ${t.following}`);
+          });
+          
+        });
+      //console.log(data);
+      });
+      
+      setTimeout(() => {
+        T.get('followers/list', {
+        screen_name: 'starshine1games',
+        count: 5
+        }, (err, data, response) => {
+          data.users.forEach(t => {
+            T.post('friendships/create', {
+              id: t.id_str
+            }, (err, data, response) => {
+                console.log(`${t.screen_name} followed from MY Tweet from S1G!`);
+            });
+          });
+        });
+      }, timeout2);
+      
+      setTimeout(() => {
+        T.get('users/suggestions/:slug', { slug: 'gaming',
+        count: 5
+        }, (err, data, response) => {
+          data.users.forEach(t => {
+            T.post('friendships/create', {
+              id: t.id_str
+            }, (err, data, response) => {
+                console.log(`${t.screen_name} followed from MY Tweet from SLUG!`);
+            });
+          });
+        });
+      }, timeout3);*/
+    }
+
+    
+    
     
   });
  
