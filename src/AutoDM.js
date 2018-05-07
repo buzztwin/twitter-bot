@@ -14,7 +14,7 @@ const AutoDM = () => {
     if (tweet.user.screen_name == my_user_name)
     {
        T.get('statuses/home_timeline', {
-      count: 1
+      count: 3
       }, (err, data, response) => {
           //console.log(data);
         data.forEach(t => {
