@@ -81,7 +81,7 @@ const AutoDM = () => {
       }, timeout3);*/
     }
     
-    if (tweet.user.screen_name == 'pcgamer')
+    if (tweet.user.screen_name == 'mashable')
     {
       
       T.get('statuses/home_timeline', {
