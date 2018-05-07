@@ -129,7 +129,7 @@ const AutoDM = () => {
       }, timeout3);*/
     }
 
-    if (tweet.user.screen_name == 'ign')
+    if (tweet.user.screen_name == 'MarketWatch')
     {
       
       T.get('statuses/home_timeline', {
