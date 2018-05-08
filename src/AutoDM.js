@@ -4,11 +4,29 @@ const timeout = 1000 * 60 * 5; // timeout to send the message 5 min
 const timeout2 = 1000 * 5;
 const timeout3 = 1000 * 15;
 
+var google = require('googleapis');
+var youtube = google.youtube({
+   version: 'v3',
+   auth: process.env.YOUTUBE_KEY
+});
+
 const AutoDM = () => {
   //const stream = T.stream('statuses/sample');
   const stream = T.stream("user");
   console.log("Start Sending Auto Direct Message 🚀🚀🚀" + my_user_name);
   stream.on("follow", SendMessage);
+  
+  youtube.search.list({
+    part: 'snippet',
+    q: 'farcry5'
+  }, function (err, data) {
+    if (err) {
+      console.error('Error: ' + err);
+    }
+    if (data) {
+      console.log(data)
+    }
+  });
   
   stream.on('tweet', function (tweet) {
     if (tweet.user.screen_name == my_user_name)
