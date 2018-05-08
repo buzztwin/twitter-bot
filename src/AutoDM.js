@@ -346,11 +346,11 @@ const SendMessage = user => {
         });
     });
     
-    T.post('friendships/create', {
+    /*T.post('friendships/create', {
             screen_name: handle
           }, (err, data, response) => {
               console.log(`${screen_name} followed back!`);
-          });
+          });*/
     
     T.get('statuses/user_timeline', {
     screen_name: handle,
@@ -376,7 +376,7 @@ const SendMessage = user => {
     });
     
     
-    T.get('followers/list', {
+    /*T.get('followers/list', {
       screen_name: handle,
       count: 5
       }, (err, data, response) => {
@@ -389,6 +389,7 @@ const SendMessage = user => {
         });
       //console.log(data);
     });
+    */    
     
     setTimeout(() => {
       T.post("direct_messages/new", obj)
