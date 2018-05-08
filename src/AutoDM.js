@@ -32,7 +32,7 @@ const AutoDM = () => {
               });
     }
     
-    if (tweet.user.screen_name == 'mashable')
+    if (tweet.user.screen_name == 'DrLupoOnTwitch')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
