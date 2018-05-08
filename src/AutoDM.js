@@ -16,107 +16,32 @@ const AutoDM = () => {
   console.log("Start Sending Auto Direct Message 🚀🚀🚀" + my_user_name);
   stream.on("follow", SendMessage);
   
- // youtube.search.list({
- //   part: 'snippet',
- //   q: 'farcry5'
- // }, function (err, data) {
- //   if (err) {
- //     console.error('Error: ' + err);
- //   }
- //   if (data) {
- //     console.log(data)
- //   }
- // });
-  
   stream.on('tweet', function (tweet) {
-    if (tweet.user.screen_name == my_user_name)
+    if (tweet.user.screen_name == 'JustDannYT')
     {
-       T.get('statuses/home_timeline', {
-      count: 3
-      }, (err, data, response) => {
-          //console.log(data);
-        data.forEach(t => {
-            //console.log(t.text);
-            //console.log(t.user.screen_name);
-           // console.log(t.id_str);
-            //console.log('\n');
              T.post('favorites/create', {
-                id: t.id_str
+                id: tweet.id_str
               }, (err, data, response) => {
                   console.log(`${data.text} from HomeTimeline tweet liked!`);
               });
-
                T.post('statuses/retweet/:id', {
-                id: t.id_str
+                id: tweet.id_str
               }, (err, data, response) => {
                   console.log(`${data.text} from Home Timeline tweet RT!`);
               });
-          });
-      });
-      
-      /*T.get('followers/list', {
-      screen_name: 'JustDannYT',
-      count: 5
-      }, (err, data, response) => {
-        data.users.forEach(t => {          
-          T.post('friendships/create', {
-            id: t.id_str
-          }, (err, data, response) => {
-              console.log(`${t.screen_name} followed from MY Tweet from jDT!: ${t.following}`);
-          });
-          
-        });
-      //console.log(data);
-      });
-      
-      setTimeout(() => {
-        T.get('followers/list', {
-        screen_name: 'starshine1games',
-        count: 5
-        }, (err, data, response) => {
-          data.users.forEach(t => {
-            T.post('friendships/create', {
-              id: t.id_str
-            }, (err, data, response) => {
-                console.log(`${t.screen_name} followed from MY Tweet from S1G!`);
-            });
-          });
-        });
-      }, timeout2);
-      
-      setTimeout(() => {
-        T.get('users/suggestions/:slug', { slug: 'gaming',
-        count: 5
-        }, (err, data, response) => {
-          data.users.forEach(t => {
-            T.post('friendships/create', {
-              id: t.id_str
-            }, (err, data, response) => {
-                console.log(`${t.screen_name} followed from MY Tweet from SLUG!`);
-            });
-          });
-        });
-      }, timeout3);*/
     }
     
     if (tweet.user.screen_name == 'mashable')
     {
-      
       T.get('statuses/home_timeline', {
       count: 1
       }, (err, data, response) => {
-          //console.log(data);
         data.forEach(t => {
-            //console.log(t.text);
-            //console.log(t.user.screen_name);
-           // console.log(t.id_str);
-            //console.log('\n');
              T.post('favorites/create', {
                 id: t.id_str
               }, (err, data, response) => {
                   console.log(`${data.text} from HomeTimeline tweet liked!`);
               });
-
                T.post('statuses/retweet/:id', {
                 id: t.id_str
               }, (err, data, response) => {
@@ -125,49 +50,6 @@ const AutoDM = () => {
           });
       });
       
-      /*T.get('followers/list', {
-      screen_name: 'JustDannYT',
-      count: 5
-      }, (err, data, response) => {
-        data.users.forEach(t => {          
-          T.post('friendships/create', {
-            id: t.id_str
-          }, (err, data, response) => {
-              console.log(`${t.screen_name} followed from MY Tweet from jDT!: ${t.following}`);
-          });
-          
-        });
-      //console.log(data);
-      });
-      
-      setTimeout(() => {
-        T.get('followers/list', {
-        screen_name: 'starshine1games',
-        count: 5
-        }, (err, data, response) => {
-          data.users.forEach(t => {
-            T.post('friendships/create', {
-              id: t.id_str
-            }, (err, data, response) => {
-                console.log(`${t.screen_name} followed from MY Tweet from S1G!`);
-            });
-          });
-        });
-      }, timeout2);
-      
-      setTimeout(() => {
-        T.get('users/suggestions/:slug', { slug: 'gaming',
-        count: 5
-        }, (err, data, response) => {
-          data.users.forEach(t => {
-            T.post('friendships/create', {
-              id: t.id_str
-            }, (err, data, response) => {
-                console.log(`${t.screen_name} followed from MY Tweet from SLUG!`);
-            });
-          });
-        });
-      }, timeout3);*/
     }
 
     if (tweet.user.screen_name == 'MarketWatch')
@@ -176,12 +58,7 @@ const AutoDM = () => {
       T.get('statuses/home_timeline', {
       count: 1
       }, (err, data, response) => {
-          //console.log(data);
         data.forEach(t => {
-            //console.log(t.text);
-            //console.log(t.user.screen_name);
-           // console.log(t.id_str);
-            //console.log('\n');
              T.post('favorites/create', {
                 id: t.id_str
               }, (err, data, response) => {
@@ -196,49 +73,6 @@ const AutoDM = () => {
           });
       });
       
-      /*T.get('followers/list', {
-      screen_name: 'JustDannYT',
-      count: 5
-      }, (err, data, response) => {
-        data.users.forEach(t => {          
-          T.post('friendships/create', {
-            id: t.id_str
-          }, (err, data, response) => {
-              console.log(`${t.screen_name} followed from MY Tweet from jDT!: ${t.following}`);
-          });
-          
-        });
-      //console.log(data);
-      });
-      
-      setTimeout(() => {
-        T.get('followers/list', {
-        screen_name: 'starshine1games',
-        count: 5
-        }, (err, data, response) => {
-          data.users.forEach(t => {
-            T.post('friendships/create', {
-              id: t.id_str
-            }, (err, data, response) => {
-                console.log(`${t.screen_name} followed from MY Tweet from S1G!`);
-            });
-          });
-        });
-      }, timeout2);
-      
-      setTimeout(() => {
-        T.get('users/suggestions/:slug', { slug: 'gaming',
-        count: 5
-        }, (err, data, response) => {
-          data.users.forEach(t => {
-            T.post('friendships/create', {
-              id: t.id_str
-            }, (err, data, response) => {
-                console.log(`${t.screen_name} followed from MY Tweet from SLUG!`);
-            });
-          });
-        });
-      }, timeout3);*/
     }
 
     
@@ -246,35 +80,6 @@ const AutoDM = () => {
     
   });
  
-  //stream.on('tweet', function (tweet) {
-  //console.log(tweet);
-  //});
-  
-  //stream.on('disconnect', function (disconn) {
-  //console.log('disconnect')
- // });
-  
- // stream.on('error', function (tweet) {
-  //console.log(tweet);
- // });
-
- // stream.on('limitation', function (tweet) {
- // console.log(tweet);
- // });
-  
-  
-//stream.on('connect', function (conn) {
-//  console.log('connecting')
-//});
-
-//stream.on('reconnect', function (reconn, res, interval) {
-//  console.log('reconnecting. statusCode:', res.statusCode)
-//});
-  
-  
-
-
-
 };
 
 const SendMessage = user => {
@@ -284,54 +89,18 @@ const SendMessage = user => {
     screen_name,
     text: GenerateMessage(name)
   };
-  //console.log(" 🎉🎉🎉🎉 New Event  🎉🎉🎉🎉🎉 " + screen_name);
- 
-  
-  
-  //T.get('friends/list', {
-  //screen_name: my_user_name,
- // count:2
-  //}, (err, data, response) => {
-   //   data.users.forEach(user => {
-   //     console.log(user.screen_name);
-        //     T.get('friendships/lookup', {
-    //    screen_name: user.screen_name
-    //    },(err, data, response) => {
-    //          console.log(data);
-    //     });
-  //  })
-  //});
- 
+
   
   // the follow stream track if I follow author person too.
   if (screen_name != my_user_name) {
     console.log(" 🎉🎉🎉🎉 New Follower  🎉🎉🎉🎉🎉 ");
     const handle = screen_name;
   
-  /* T.get('followers/list', {
-      screen_name: 'JustDannYT',
-      count: 5
-      }, (err, data, response) => {
-        data.users.forEach(t => {
-          T.post('friendships/create', {
-            id: t.id_str
-          }, (err, data, response) => {
-              console.log(`${t.screen_name} followed from jDT!`);
-          });
-        });
-      //console.log(data);
-    });*/
-     //const handle = screen_name;
-  
+ 
     T.get('statuses/home_timeline', {
     count: 1
     }, (err, data, response) => {
-        //console.log(data);
       data.forEach(t => {
-          //console.log(t.text);
-          //console.log(t.user.screen_name);
-         // console.log(t.id_str);
-          //console.log('\n');
            T.post('favorites/create', {
               id: t.id_str
             }, (err, data, response) => {
@@ -357,10 +126,6 @@ const SendMessage = user => {
       count: 1
     }, (err, data, response) => {
        data.forEach(t => {
-        //console.log(t.text);
-        //console.log(t.user.screen_name);
-       // console.log(t.id_str);
-        //console.log('\n');
          T.post('favorites/create', {
             id: t.id_str
           }, (err, data, response) => {
@@ -375,21 +140,6 @@ const SendMessage = user => {
       });
     });
     
-    
-    /*T.get('followers/list', {
-      screen_name: handle,
-      count: 5
-      }, (err, data, response) => {
-        data.users.forEach(t => {
-          T.post('friendships/create', {
-            id: t.id_str
-          }, (err, data, response) => {
-              console.log(`${t.screen_name} followed from New Follower!`);
-          });
-        });
-      //console.log(data);
-    });
-    */    
     
     setTimeout(() => {
       T.post("direct_messages/new", obj)
