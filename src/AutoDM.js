@@ -63,7 +63,7 @@ const AutoDM = () => {
       
     }
    
-    if (tweet.user.screen_name == 'idolshelpffx')
+    if (tweet.user.screen_name == 'ReyPlays_')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -79,7 +79,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'FollowTrickVIP')
+    if (tweet.user.screen_name == 'vMrHuNTeRv')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -95,7 +95,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'GainWithGenny')
+    if (tweet.user.screen_name == 'elgatogaming')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -110,7 +110,7 @@ const AutoDM = () => {
               });
     }
    
-      if (tweet.user.screen_name == 'pyewaw')
+      if (tweet.user.screen_name == 'youngmillz82')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -126,7 +126,7 @@ const AutoDM = () => {
     }
    
    
-      if (tweet.user.screen_name == 'xtiandela')
+      if (tweet.user.screen_name == 'superchloeone')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
