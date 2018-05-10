@@ -17,7 +17,7 @@ const AutoDM = () => {
   stream.on("follow", SendMessage);
   
   stream.on('tweet', function (tweet) {
-    if (tweet.user.screen_name == 'JustDannYT')
+    if (tweet.user.screen_name == 'dailytxtmsg')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -32,7 +32,7 @@ const AutoDM = () => {
               });
     }
     
-    if (tweet.user.screen_name == 'DrLupoOnTwitch')
+    if (tweet.user.screen_name == 'TheseRealWords')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -48,7 +48,7 @@ const AutoDM = () => {
       
     }
 
-    if (tweet.user.screen_name == 'ninja')
+    if (tweet.user.screen_name == 'Relationsmentor')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -63,7 +63,7 @@ const AutoDM = () => {
       
     }
    
-    if (tweet.user.screen_name == 'ReyPlays_')
+    if (tweet.user.screen_name == 'RichWisdom')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -79,7 +79,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'vMrHuNTeRv')
+    if (tweet.user.screen_name == 'TextsBook')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -95,7 +95,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'elgatogaming')
+    if (tweet.user.screen_name == 'myunwrittensoul')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -110,7 +110,7 @@ const AutoDM = () => {
               });
     }
    
-      if (tweet.user.screen_name == 'youngmillz82')
+      if (tweet.user.screen_name == 'SweetLovePost')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -126,7 +126,7 @@ const AutoDM = () => {
     }
    
    
-      if (tweet.user.screen_name == 'superchloeone')
+      if (tweet.user.screen_name == 'TheIifePost')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -229,10 +229,10 @@ const GenerateMessage = name => {
   ];
   const d = new Date();
   const dayName = days[d.getDay()];
-  const channelName = "https://youtube.com/c/ANPAUS";
+  const channelName = "https://buzztwin.com";
   //return `Hi ${name} Thanks for .... \n Happy ${dayName} 😊😊 `; // your message
   // My message   
-  return `Hi ${name} Thanks for being a part of my social media network. \n If you want to check me out on Youtube click-> ${channelName} \n Happy to discuss anytime 😊  \n Happy ${dayName} 😊😊 `;
+  return `Hi ${name} Thanks for being a part of my social media network. \n If you want to check out my blog about life and relationships -> ${channelName} \n Happy to discuss anytime 😊  \n Happy ${dayName} 😊😊 `;
 };
 
 module.exports = AutoDM;
