@@ -1,5 +1,5 @@
 const T = require("./Twit.js");
-const sampleClient = require('./sampleclient');
+//const sampleClient = require('./sampleclient');
 
 const {google} = require('googleapis');
 const my_user_name = require("../config").userName;
@@ -7,11 +7,11 @@ const timeout = 1000 * 60 * 5; // timeout to send the message 5 min
 const timeout2 = 1000 * 5;
 const timeout3 = 1000 * 15;
 
-const youtube = google.youtube({
+/*const youtube = google.youtube({
    version: 'v3',
    //auth: process.env.YOUTUBE_KEY
    auth: sampleClient.oAuth2Client 
-});
+});*/
 
 //var google = require('googleapis');
 //var youtube = google.youtube({
@@ -19,13 +19,13 @@ const youtube = google.youtube({
  //  auth: process.env.YOUTUBE_KEY
 //});
 
-async function runSample () {
+/*async function runSample () {
   const res = await youtube.search.list({
     part: 'id,snippet',
     q: 'Node.js on Google Cloud'
   });
   console.log(res.data);
-}
+}*/
 
 const AutoDM = () => {
   //const stream = T.stream('statuses/sample');
@@ -35,10 +35,10 @@ const AutoDM = () => {
  
  
  
-runSample();
+//runSample();
 
 
- youtube.subscriptions.insert({
+ /*youtube.subscriptions.insert({
   part : 'snippet',
   resource:  {
                 kind: 'youtube#channel',
@@ -49,7 +49,7 @@ runSample();
       console.log('The API Sub Insert returned an error: ' + err);
     }
       //console.log(data);
-  });
+  });*/
   
   
   stream.on('tweet', function (tweet) {
