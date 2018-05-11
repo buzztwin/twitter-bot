@@ -31,6 +31,7 @@ console.log(keyPath);
 let keys = { redirect_uris: [''] };
 if (fs.existsSync(keyPath)) {
   keys = require(keyPath).web;
+  console.log("Keys exist");
 }
 console.log(keys);
 class SampleClient {
