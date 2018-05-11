@@ -6,6 +6,11 @@ const timeout = 1000 * 60 * 5; // timeout to send the message 5 min
 const timeout2 = 1000 * 5;
 const timeout3 = 1000 * 15;
 
+const youtube = google.youtube({
+   version: 'v3',
+   auth: process.env.YOUTUBE_KEY
+ });
+
 //var google = require('googleapis');
 //var youtube = google.youtube({
  //  version: 'v3',
@@ -26,10 +31,7 @@ const AutoDM = () => {
   console.log("Start Sending Auto Direct Message 🚀🚀🚀" + my_user_name);
   stream.on("follow", SendMessage);
  
- const youtube = google.youtube({
-   version: 'v3',
-   auth: process.env.YOUTUBE_KEY
- });
+ 
  
 runSample();
 
