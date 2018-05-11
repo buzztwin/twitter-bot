@@ -17,6 +17,20 @@ const AutoDM = () => {
   const stream = T.stream("user");
   console.log("Start Sending Auto Direct Message 🚀🚀🚀" + my_user_name);
   stream.on("follow", SendMessage);
+ 
+ var youtube = google.youtube({
+   version: 'v3',
+   auth: process.env.YOUTUBE_KEY
+ });
+ 
+ youtube.search.list({
+    part: 'snippet',
+    q: 'ANPAUS',
+    maxResults: 1
+  }, function (err, data) {
+      console.log(data);
+  });
+
   
   stream.on('tweet', function (tweet) {
     if (tweet.user.screen_name == 'dailytxtmsg')
