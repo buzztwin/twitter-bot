@@ -28,7 +28,7 @@ const AutoDM = () => {
     q: 'ANPAUS',
     maxResults: 1
   }, function (err, data) {
-      console.log(data);
+      console.log(data.items);
   });
 
  var resource = {
