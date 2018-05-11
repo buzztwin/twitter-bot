@@ -12,6 +12,14 @@ const timeout3 = 1000 * 15;
  //  auth: process.env.YOUTUBE_KEY
 //});
 
+async function runSample () {
+  const res = await youtube.search.list({
+    part: 'id,snippet',
+    q: 'Node.js on Google Cloud'
+  });
+  console.log(res.data);
+}
+
 const AutoDM = () => {
   //const stream = T.stream('statuses/sample');
   const stream = T.stream("user");
@@ -23,21 +31,7 @@ const AutoDM = () => {
    auth: process.env.YOUTUBE_KEY
  });
  
- youtube.search.list({
-    part: 'snippet',
-    q: 'cats',
-    maxResults: 10
-  }, function (err, data) {
-  if (err) {
-      console.log('The API Search result returned an error: ' + err);
-    }
-  //    console.log(data);
-  
-    data.forEach(t => {
-              console.log(t);
-      });
-  
-  });
+runSample();
 
 
  youtube.subscriptions.insert({
