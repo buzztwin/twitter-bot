@@ -1,7 +1,13 @@
 const T = require("./Twit.js");
-const fs = require('fs');
-const readline = require('readline');
-const {google} = require('googleapis');
+
+const Youtube = require("youtube-api")
+    , fs = require("fs")
+    , readJson = require("r-json")
+    , Lien = require("lien")
+    , Logger = require("bug-killer")
+    , opn = require("opn")
+    , prettyBytes = require("pretty-bytes")
+    ;
 //require('googleapis');
 const my_user_name = require("../config").userName;
 const timeout = 1000 * 60 * 5; // timeout to send the message 5 min
