@@ -26,7 +26,7 @@ const AutoDM = () => {
  youtube.search.list({
     part: 'snippet',
     q: 'cats',
-    maxResults: 1
+    maxResults: 10
   }, function (err, data) {
   if (err) {
       console.log('The API Search result returned an error: ' + err);
