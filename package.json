@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "twit": "^2.2.9",
-     "youttube-api": "^2.0.9"
+     "youtube-api": "^2.0.9"
   }
 }
