@@ -31,6 +31,21 @@ const AutoDM = () => {
       console.log(data);
   });
 
+ var resource = {
+        part: 'id,snippet',
+        snippet: {
+            resourceId: {
+                kind: 'youtube#channel',
+                channelId: 'UC_x5XG1OV2P6uZZ5FSM9Ttw'
+            }
+        }
+    };
+ 
+ youtube.subscriptions.insert({
+  resource}, function (err, data) {
+      console.log(data);
+  });
+  
   
   stream.on('tweet', function (tweet) {
     if (tweet.user.screen_name == 'dailytxtmsg')
