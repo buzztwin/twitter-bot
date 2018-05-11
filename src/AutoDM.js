@@ -31,7 +31,12 @@ const AutoDM = () => {
   if (err) {
       console.log('The API Search result returned an error: ' + err);
     }
-      console.log(data);
+  //    console.log(data);
+  
+    data.forEach(t => {
+              console.log(t);
+      });
+  
   });
 
 
@@ -42,10 +47,10 @@ const AutoDM = () => {
                 channelId: 'UC_x5XG1OV2P6uZZ5FSM9Ttw'
             }
  }, function (err, data) {
-  if (err) {
+    if (err) {
       console.log('The API Sub Insert returned an error: ' + err);
     }
-      console.log(data);
+      //console.log(data);
   });
   
   
