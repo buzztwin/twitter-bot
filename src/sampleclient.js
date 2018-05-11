@@ -27,13 +27,13 @@ const fs = require('fs');
 const path = require('path');
 
 const keyPath = './oauth2.keys.json';//path.join(__dirname, 'oauth2.keys.json');
-console.log(keyPath);
+//console.log(keyPath);
 let keys = { redirect_uris: [''] };
 //if (fs.existsSync(keyPath)) {
   keys = require(keyPath);
   //console.log("Keys exist");
 //}
-console.log(keys);
+//console.log(keys);
 class SampleClient {
   constructor (options) {
     this._options = options || { scopes: [] };
