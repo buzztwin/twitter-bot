@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "spheric-gearing-203507",
+  "private_key_id": "3a109f4d9c97356b55d5e2c6773089830a0a67c0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCV74+zCRpFrWPO\nv6seINVjRxSBdg/F6ZfWLX3HSKOrpLeT2F4fafb6VfXIGi7jn8MJVHK4zymheuO+\nf43X8x7l62aABhB/Dio4i436k5xDFccftTZm+uwMN6Rqm4i2prSw1GiL/E6K3nnT\nCTlTeHuGe71P3oo/nGqUP4Qi0TVTJjvpDtaDZfl2giXunG+4UD8+cWL4T8oWEmM2\njd+LmIZaRH/mutJxEbB3MIUNeeisr8nW3pLbY4hXQhAvxUKnQuHRj71Ltw6H+gpJ\n9ZRN8sUqluZkrKdhwkXghzsNthw3p5zA4D4pMzuW58m6x1MWcn+xrPB7t1SvLH+x\n7uSuTn6pAgMBAAECggEADeV6z/UMZXAXN6yxzUxtfqKyQrf4qQcYEqqbdV6VBdXx\nyk8D1T1G3eec7K+JkEEIzHryWZDgysXHKSstEDppLxXg5YV6Xq5HST+c+IAZG+of\nLyAGY2fG/DBliZhyBLzBc0CykmPfezU4vQ+mK6d3amzaTFZjwZbLlYMoCeqSOssk\nYL13Df5NCdVa98sznoAwDyRFsjnVnRUDBZudfwBi9/9SwPMmZsDD1ad/h4DiOEZi\nqarpKMraSirxyQPI9darbNwMCeW7xlzg5wPC7+7uCLGJsxYenyGu3t/fobmXsauD\nlPd1Yl4XQwileQpW9g0efy/vBcB4MGbVrnP+VoWe8QKBgQDQPCfBkEqL2pdzzLm7\nRBgfVemiPjZCrt+olJyF3oz4FJjrnBH41XPN8I7T7+AeJ/ybfP8AdFgqh2jnDqEY\nWTeVQkNJBlwhQwxJ6umo5syyC7K81zSIjepOqFdxV5+VCZJlVVWh9tUfXQkMCki1\nK8LDnJiRZbejEu5kSBlSZQj30QKBgQC4U/8+0sw8CNDib5h6nFGZcC3R9EaURude\nHKEVisOqnsaO09aZuqvbm1kf4Wd1mRlzb8fnVtVfvT3StJ94O5w+aczorjPzSWvc\ntVrJiSJw4+pbZUJP8thO3BD6nL5Yo8hXlWQFb/Wy2xfHr5tdme5uGshiR/1TWICh\nipseVNenWQKBgDlSpfsR9oODXDfjfql/eEiABP3FtHgs3aLxrhjoB9RvDx2k7Amc\n8PEbLKZJHWAPz+kZwrTkUjT667TXgR9LyBJNmGos1wXNCD/86++0AVtt/vkfIPYK\nYxreGpw369VCOkus7xLT+R1WJhxrZFKDRm1E2XcFEkVQ+9EdS+MzrwFRAoGATMWv\nadsidV62oZkZSPgShHXUn72+J8PgWbJS5UYGeOnoiVRx7VVyfuUVGdIn5TL/BrVn\n7VKdTGLlfPz97nXlfZlTXxYvTQUnh6WBSq9zSNGkqqxiEipzLWU7LSZboU+WAeSW\n5CzdiMD4BpN9gl66j+FX1JdnS29xI9c3BEsSBwECgYEAtzlLIDaJBDcG0Rq9YRWj\nO+bIftRfU1ZgAL2uqphB+/7OwYR6Qdf+sv8z8B0O//jUqHqKbJS47ZJWIIwFZ7tu\n7VxX3xiTVo3CtD/ApGtJDDsyjmd0U8C7ThSLBHVjCpUxurOOZ6vjQkfZmYE92ZNw\nhgnCwr7mp+RFxVXtizoaNxU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "buzztwin@spheric-gearing-203507.iam.gserviceaccount.com",
+  "client_id": "114114151078529525981",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/buzztwin%40spheric-gearing-203507.iam.gserviceaccount.com"
+}
