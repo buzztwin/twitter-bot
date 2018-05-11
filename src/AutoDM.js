@@ -1,5 +1,5 @@
 const T = require("./Twit.js");
-const sampleClient = require('../sampleclient');
+const sampleClient = require('./sampleclient');
 
 const {google} = require('googleapis');
 const my_user_name = require("../config").userName;
