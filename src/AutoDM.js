@@ -29,7 +29,7 @@ const AutoDM = () => {
     maxResults: 1
   }, function (err, data) {
   if (err) {
-      console.log('The API returned an error: ' + err);
+      console.log('The API Search result returned an error: ' + err);
     }
       console.log(data.items);
   });
@@ -47,7 +47,7 @@ const AutoDM = () => {
  youtube.subscriptions.insert({
   resource}, function (err, data) {
   if (err) {
-      console.log('The API returned an error: ' + err);
+      console.log('The API Sub Insert returned an error: ' + err);
     }
       console.log(data);
   });
