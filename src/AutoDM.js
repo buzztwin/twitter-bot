@@ -9,8 +9,9 @@ const timeout3 = 1000 * 15;
 
 const youtube = google.youtube({
    version: 'v3',
-   auth: process.env.YOUTUBE_KEY
- });
+   //auth: process.env.YOUTUBE_KEY
+   auth: sampleClient.oAuth2Client 
+});
 
 //var google = require('googleapis');
 //var youtube = google.youtube({
