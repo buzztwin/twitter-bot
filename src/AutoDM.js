@@ -25,27 +25,23 @@ const AutoDM = () => {
  
  youtube.search.list({
     part: 'snippet',
-    q: 'ANPAUS',
+    q: 'cats',
     maxResults: 1
   }, function (err, data) {
   if (err) {
       console.log('The API Search result returned an error: ' + err);
     }
-      console.log(data.items);
+      console.log(data);
   });
 
- var resource = {
-        part: 'id,snippet',
-        snippet: {
-            resourceId: {
+
+ youtube.subscriptions.insert({
+  part : 'snippet',
+  resource:  {
                 kind: 'youtube#channel',
                 channelId: 'UC_x5XG1OV2P6uZZ5FSM9Ttw'
             }
-        }
-    };
- 
- youtube.subscriptions.insert({
-  resource}, function (err, data) {
+ }, function (err, data) {
   if (err) {
       console.log('The API Sub Insert returned an error: ' + err);
     }
