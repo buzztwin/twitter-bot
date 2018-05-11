@@ -18,7 +18,7 @@ const AutoDM = () => {
   console.log("Start Sending Auto Direct Message 🚀🚀🚀" + my_user_name);
   stream.on("follow", SendMessage);
  
- var youtube = google.youtube({
+ const youtube = google.youtube({
    version: 'v3',
    auth: process.env.YOUTUBE_KEY
  });
