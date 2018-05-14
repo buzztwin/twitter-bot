@@ -99,7 +99,7 @@ const AutoDM = () => {
       
     }
    
-    if (tweet.user.screen_name == 'arian_FOLLOW')
+    if (tweet.user.screen_name == 'RunZwithDooBiEs')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
