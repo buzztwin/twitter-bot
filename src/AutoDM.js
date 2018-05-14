@@ -53,7 +53,7 @@ const AutoDM = () => {
   
   
   stream.on('tweet', function (tweet) {
-    if (tweet.user.screen_name == 'dailytxtmsg')
+    if (tweet.user.screen_name == 'SimpleGain')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -68,7 +68,7 @@ const AutoDM = () => {
               });
     }
     
-    if (tweet.user.screen_name == 'TheseRealWords')
+    if (tweet.user.screen_name == 'Gain1DDrive')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -84,7 +84,7 @@ const AutoDM = () => {
       
     }
 
-    if (tweet.user.screen_name == 'Relationsmentor')
+    if (tweet.user.screen_name == 'GainWithPyeWaw')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -99,7 +99,7 @@ const AutoDM = () => {
       
     }
    
-    if (tweet.user.screen_name == 'RichWisdom')
+    if (tweet.user.screen_name == 'arian_FOLLOW')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -115,7 +115,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'TextsBook')
+    if (tweet.user.screen_name == 'decorartehogar')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -131,7 +131,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'myunwrittensoul')
+    if (tweet.user.screen_name == 'EmpireGain')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -146,7 +146,7 @@ const AutoDM = () => {
               });
     }
    
-      if (tweet.user.screen_name == 'SweetLovePost')
+      if (tweet.user.screen_name == 'jbieberrhelp')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -162,7 +162,7 @@ const AutoDM = () => {
     }
    
    
-      if (tweet.user.screen_name == 'TheIifePost')
+      if (tweet.user.screen_name == 'Prospergain')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
