@@ -222,6 +222,21 @@ const AutoDM = () => {
               });
     }  
      
+     
+       if (tweet.user.screen_name == 'Camilas1Empire')
+    {
+              T.post('favorites/create', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });
+     
+               T.post('statuses/retweet/:id', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+    }  
     
     
   });
