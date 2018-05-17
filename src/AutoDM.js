@@ -284,6 +284,37 @@ const AutoDM = () => {
                   console.log(`${data.text} from Home Timeline tweet RT!`);
               });
     }  
+     
+      if (tweet.user.screen_name == 'FameRTR')
+    {
+             /* T.post('favorites/create', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });*/
+     
+               T.post('statuses/retweet/:id', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+    }  
+     
+        
+      if (tweet.user.screen_name == 'DNRCREWx')
+    {
+             /* T.post('favorites/create', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });*/
+     
+               T.post('statuses/retweet/:id', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              });
+    }  
     
     
   });
