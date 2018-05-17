@@ -55,7 +55,7 @@ const AutoDM = () => {
   stream.on('tweet', function (tweet) {
     console.log(tweet);
      
-    if (tweet.user.screen_name == 'SimpleGain')
+    if (tweet.user.screen_name == 'YouTuberGainz')
     {
             /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -70,7 +70,7 @@ const AutoDM = () => {
               });
     }
     
-    if (tweet.user.screen_name == 'Gain1DDrive')
+    if (tweet.user.screen_name == 'TheYTForum')
     {
              /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -86,7 +86,7 @@ const AutoDM = () => {
       
     }
 
-    if (tweet.user.screen_name == 'GainWithPyeWaw')
+    if (tweet.user.screen_name == 'MC_UTubers')
     {
            /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -101,7 +101,7 @@ const AutoDM = () => {
       
     }
    
-    if (tweet.user.screen_name == 'RunZwithDooBiEs')
+    if (tweet.user.screen_name == '_NewYoutubers')
     {
             /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -117,7 +117,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'decorartehogar')
+    if (tweet.user.screen_name == 'SmallYoutube')
     {
              /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -133,7 +133,7 @@ const AutoDM = () => {
     }
 
    
-    if (tweet.user.screen_name == 'EmpireGain')
+    if (tweet.user.screen_name == 'YouTbrsNOW')
     {
            /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -148,7 +148,7 @@ const AutoDM = () => {
               });
     }
    
-      if (tweet.user.screen_name == 'jbieberrhelp')
+      if (tweet.user.screen_name == 'YouTubeUpcomers')
     {
           /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -164,7 +164,7 @@ const AutoDM = () => {
     }
    
    
-      if (tweet.user.screen_name == 'Prospergain')
+      if (tweet.user.screen_name == 'New_YouTubers')
     {
              /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -179,7 +179,7 @@ const AutoDM = () => {
               });
     }
      
-       if (tweet.user.screen_name == 'worIdpixstories')
+       if (tweet.user.screen_name == 'youtubenewtube')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -194,7 +194,7 @@ const AutoDM = () => {
               });
     } 
      
-      if (tweet.user.screen_name == 'QuotesDailyBook')
+      if (tweet.user.screen_name == 'ServingRetweets')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -209,7 +209,7 @@ const AutoDM = () => {
               });
     }  
      
-      if (tweet.user.screen_name == 'Notebooktxts')
+      if (tweet.user.screen_name == 'YTRetweets4U')
     {
               T.post('favorites/create', {
                 id: tweet.id_str
@@ -225,7 +225,7 @@ const AutoDM = () => {
     }  
      
      
-       if (tweet.user.screen_name == 'Camilas1Empire')
+       if (tweet.user.screen_name == 'LetsGrow_SC')
     {
              /* T.post('favorites/create', {
                 id: tweet.id_str
@@ -330,7 +330,7 @@ const GenerateMessage = name => {
   const channelName = "https://youtube.com/c/ANPAUS";
   //return `Hi ${name} Thanks for .... \n Happy ${dayName} 😊😊 `; // your message
   // My message   
-  return `Hi ${name} Thanks for being a part of my social media network. \n If you want to check me out on Youtube click -> ${channelName} \n Happy to discuss anytime 😊  \n Happy ${dayName} 😊😊 `;
+  return `Hi ${name} Awesome Thank You for being a part of my social media network 🎉🎉🎉🎉. \n If you want to check me out on Youtube click -> ${channelName} \n Happy to chat anytime 😊  \n Happy ${dayName} 😊😊 `;
 };
 
 module.exports = AutoDM;
