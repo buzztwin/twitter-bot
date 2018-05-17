@@ -53,6 +53,8 @@ const AutoDM = () => {
   
   
   stream.on('tweet', function (tweet) {
+    console.log(tweet);
+     /*
     if (tweet.user.screen_name == 'SimpleGain')
     {
             /* T.post('favorites/create', {
@@ -236,7 +238,7 @@ const AutoDM = () => {
               }, (err, data, response) => {
                   console.log(`${data.text} from Home Timeline tweet RT!`);
               });
-    }  
+    }  */
     
     
   });
@@ -276,11 +278,11 @@ const SendMessage = user => {
         });
     });*/
     
-    T.post('friendships/create', {
+    /*T.post('friendships/create', {
       screen_name: handle
     }, (err, data, response) => {
         console.log(`${screen_name} followed back!`);
-    });
+    });*/
     
     /*T.get('statuses/user_timeline', {
     screen_name: handle,
